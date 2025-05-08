@@ -1,7 +1,7 @@
 title: blog # name of the site
 author: Gaëtan Jestin # name of site's author
 email: ecrire@gaetan.cool # email of site's author
-url: https://blog.gaetan.dev # root address of the site
+url: https://blog.gaetanjestin.com # root address of the site
 baseurl: '' # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
   Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.

@@ -2,20 +2,9 @@
 layout: default
 ---
 
-<article>
-	<nav>
-		<div aria-label="site branding">
-			<img src="../logo.png" alt="orange gradient circle logo" />
-			<div>
-				<a href="/" aria-label="site publisher">gaëtan.cool</a> / {{ page.title
-				}}
-			</div>
-		</div>
-		<div>
-			<a href="/about">about</a>
-		</div>
-	</nav>
+{% include nav.html %}
 
+<article>
 	<p class="post-meta">
 		<time datetime="{{ page.date }}"
 			>{{ page.date | date: site.theme_config.date_format }}</time

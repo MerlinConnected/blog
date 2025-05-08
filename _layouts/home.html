@@ -2,21 +2,14 @@
 layout: default
 ---
 
-<nav>
-	<div aria-label="site branding">
-		<img src="../logo.png" alt="orange gradient circle logo" />
-		<p aria-label="site publisher">gaëtan.cool</p>
-	</div>
-	<div>
-		<a href="/about">about</a>
-	</div>
-</nav>
+{%-include nav.html-%}
 <header>
 	<h1>{{ site.title }}</h1>
 	{%-if site.theme_config.show_description-%}
 	<p>{{ site.description }}</p>
 	{%-endif-%}
 </header>
+
 <hr />
 
 {%-include articles_list.html-%}
@@ -31,3 +24,11 @@ layout: default
 </p>
 
 {{ content }}
+
+<hr />
+
+<footer>
+	<p>
+		built on <a href="https://jekyllrb.com/">jekyll</a>, <a href="https://github.com/riggraz/no-style-please">no-style-please</a> and <a href="https://www.obsidian.md/">Obsidian</a>
+	</p>
+</footer>

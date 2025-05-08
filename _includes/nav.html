@@ -1,0 +1,20 @@
+<nav>
+	<div aria-label="site branding">
+		{% if page.layout == 'post' %}
+            <a href="{{ site.url }}">
+                <img src="../logo.png" alt="orange gradient circle logo" />
+            </a>
+			<div>
+				<a href="/" aria-label="site publisher">gaëtan.cool</a> / {{ page.title }}
+			</div>
+		{% else %}
+			<a href="{{ site.url }}">
+				<img src="../logo.png" alt="orange gradient circle logo" />
+			</a>
+			<p aria-label="site publisher">gaëtan.cool</p>
+		{% endif %}
+	</div>
+	<div>
+		<a href="/about">about</a>
+	</div>
+</nav>

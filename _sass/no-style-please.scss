@@ -6,6 +6,7 @@ $black: #030302;
 $mid: #a49f93;
 $light: #fcf2d7;
 $dark: #302f2d;
+
 body {
 	background: $black;
 	color: $light;
@@ -102,6 +103,10 @@ hr {
 	margin: 2.75rem 0;
 }
 
+a {
+	color: $light;
+}
+
 .articles {
 	h3 {
 		margin-bottom: 1.5rem;
@@ -120,10 +125,6 @@ hr {
 			grid-template-columns: 3rem 1fr;
 			gap: 2rem;
 
-			a {
-				color: $light;
-			}
-
 			time {
 				color: $mid;
 			}
@@ -135,4 +136,8 @@ hr {
 	a {
 		color: $light;
 	}
+}
+
+footer {
+	font-size: 0.875rem;
 }
