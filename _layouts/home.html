@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<nav>
+	<div aria-label="site branding">
+		<img src="../logo.png" alt="orange gradient circle logo" />
+		<p aria-label="site publisher">gaëtan.cool</p>
+	</div>
+	<div>
+		<a href="/about">about</a>
+	</div>
+</nav>
+<header>
+	<h1>{{ site.title }}</h1>
+	{%-if site.theme_config.show_description-%}
+	<p>{{ site.description }}</p>
+	{%-endif-%}
+</header>
+<hr />
+
+{%-include articles_list.html-%}
+
+<hr />
+
+<h2>want updates ?</h2>
+<p class="social-links">
+	follow me via <a href="/feed.xml">rss</a>,
+	<a href="https://x.com/merlinconnected">twitter</a>,
+	<a href="https://www.instagram.com/merlinconnected/">instagram</a>...
+</p>
+
+{{ content }}
