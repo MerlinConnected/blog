@@ -67,18 +67,18 @@ blockquote {
 }
 
 :root {
-	--black: #e7eff7;
-	--light: #121d39;
-	--mid: #77899f;
-	--dark: #d3e0ec;
+	--background: #f3f7fb;
+	--text-hc: #121d39;
+	--text-md: #77899f;
+	--border: #d3e0ec;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--black: #030302;
-		--mid: #a49f93;
-		--light: #fcf2d7;
-		--dark: #302f2d;
+		--background: #030302;
+		--text-hc: #fcf2d7;
+		--text-md: #a49f93;
+		--border: #302f2d;
 	}
 }
 

@@ -2,8 +2,8 @@
 @import 'fonts';
 
 body {
-	background: var(--black);
-	color: var(--light);
+	background: var(--background);
+	color: var(--text-hc);
 	font-family: 'p22-mackinac-pro', serif;
 	margin: 0;
 	min-height: 100%;
@@ -26,7 +26,7 @@ code {
 
 blockquote {
 	padding-left: 2rem;
-	border-left: 2px solid var(--dark);
+	border-left: 2px solid var(--border);
 	p {
 		margin: 0;
 		font-style: italic;
@@ -41,7 +41,7 @@ img {
 
 p,
 span {
-	color: var(--mid);
+	color: var(--text-md);
 }
 
 nav {
@@ -55,7 +55,7 @@ nav {
 		gap: 1rem;
 
 		p {
-			color: var(--light);
+			color: var(--text-hc);
 		}
 	}
 
@@ -64,9 +64,9 @@ nav {
 	}
 
 	a {
-		color: var(--mid);
+		color: var(--text-md);
 		&:hover {
-			color: var(--light);
+			color: var(--text-hc);
 		}
 	}
 }
@@ -99,16 +99,16 @@ h2 {
 }
 
 hr {
-	border: 1px solid var(--dark);
+	border: 1px solid var(--border);
 	margin: 2.75rem 0;
 }
 
 a {
-	color: var(--light);
+	color: var(--text-hc);
 }
 
 time {
-	color: var(--mid);
+	color: var(--text-md);
 }
 
 .articles {
@@ -162,23 +162,23 @@ article {
 	}
 
 	strong {
-		color: var(--light);
+		color: var(--text-hc);
 	}
 
 	a {
-		color: var(--light);
+		color: var(--text-hc);
 		text-decoration: underline;
 		text-underline-offset: 0.1rem;
 		text-decoration-skip-ink: auto;
 		&:hover {
-			color: var(--mid);
+			color: var(--text-md);
 		}
 	}
 }
 
 .social-links {
 	a {
-		color: var(--light);
+		color: var(--text-hc);
 	}
 }
 
@@ -187,5 +187,5 @@ footer {
 }
 
 sup {
-	color: var(--mid);
+	color: var(--text-md);
 }
