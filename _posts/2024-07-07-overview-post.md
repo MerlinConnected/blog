@@ -1,11 +1,9 @@
 ---
 layout: post
 category: example
+tags: [obsidian, payload, figma]
+time-to-read: 10
 ---
-
-Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.
-
-# Sample heading 1
 
 ## Sample heading 2
 
@@ -13,13 +11,11 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel la
 
 #### Sample heading 4
 
-##### Sample heading 5
-
-###### Sample heading 6
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.
 
-## Lists
+### Lists
 
 Unordered:
 
@@ -34,19 +30,19 @@ Ordered:
 3. Nulla convallis id sapien ornare viverra.
 4. Nam a est eget ligula pellentesque posuere.
 
-## Blockquote
+---
 
-The following is a blockquote:
+## [Blockquote](#blockquote)
+
+The following is a blockquote with a [linpqk](https://www.google.com):
 
 > Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.
 
-## Thematic breaks (<hr>)
+## [Thematic breaks (<hr>)](#thematic-breaks-hr)
 
-Mauris viverra dictum ultricies[^3]. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **You can put some text inside the horizontal rule like so.**
+Mauris viverra dictum ultricies[^3]. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.
 
 ---
-
-{: data-content="hr with text"}
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **Or you can just have an clean horizontal rule.**
 
@@ -54,7 +50,7 @@ Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus 
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.
 
-## Code
+## [Code](#code)
 
 Now some code:
 
@@ -65,7 +61,7 @@ console.log(ultimateTruth);
 
 And here is some `inline code`!
 
-## Tables
+## [Tables](#tables)
 
 Now a table:
 
@@ -75,9 +71,9 @@ Now a table:
 | col 2 is      |   centered    |   $12 |
 | zebra stripes |   are neat    |    $1 |
 
-## Images
+## [Images](#images)
 
-![theme logo](https://raw.githubusercontent.com/riggraz/no-style-please/master/logo.png){:.ioda}
+![image](/assets/image.jpg){:.ioda}
 
 Logo of _no style, please!_ theme[^4]
 

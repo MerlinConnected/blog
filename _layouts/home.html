@@ -3,6 +3,7 @@ layout: default
 ---
 
 {%-include nav.html-%}
+
 <header>
 	<h1>{{ site.title }}</h1>
 	{%-if site.theme_config.show_description-%}
@@ -16,6 +17,11 @@ layout: default
 
 <hr />
 
+<h2>tags</h2>
+{%-include tags_list.html-%}
+
+<hr />
+
 <h2>want updates ?</h2>
 <p class="social-links">
 	follow me via <a href="/feed.xml">rss</a>,
@@ -24,11 +30,6 @@ layout: default
 </p>
 
 {{ content }}
-
-<hr />
-
-<h2>tags</h2>
-{%-include tags_list.html-%}
 
 <hr />
 

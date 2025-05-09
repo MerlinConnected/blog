@@ -7,6 +7,13 @@
 			<div>
 				<a href="/" aria-label="site publisher">gaëtan.cool</a> / {{ page.title }}
 			</div>
+		{% elsif page.layout == 'tag' %}
+            <a href="{{ site.url }}">
+                <img src="../logo.png" alt="orange gradient circle logo" />
+            </a>
+			<div>
+				<a href="/" aria-label="site publisher">gaëtan.cool</a> / {{ page.tag }}
+			</div>
 		{% else %}
 			<a href="{{ site.url }}">
 				<img src="../logo.png" alt="orange gradient circle logo" />

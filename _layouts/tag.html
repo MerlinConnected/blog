@@ -5,13 +5,12 @@ layout: default
 {%-include nav.html-%}
 
 <header>
-  <h1>Posts tagged "{{ page.tag }}"</h1>
+  <h1>Articles tagged {{ page.tag }}</h1>
 </header>
 
 <hr />
 
 <div class="articles">
-  <h2>articles</h2>
   {%- assign tag_posts = site.tags[page.tag] -%}
 
   {%- if tag_posts.size > 0 -%}
