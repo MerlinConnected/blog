@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{%-include nav.html-%}
+
+<header>
+  <h1>Posts tagged "{{ page.tag }}"</h1>
+</header>
+
+<hr />
+
+<div class="articles">
+  <h2>articles</h2>
+  {%- assign tag_posts = site.tags[page.tag] -%}
+
+  {%- if tag_posts.size > 0 -%}
+    {%- assign posts_by_year = tag_posts | group_by_exp:"post", "post.date | date: '%Y'" -%}
+    {%- for year in posts_by_year -%}
+      <h3>{{ year.name }}</h3>
+      <ul>
+        {%- for post in year.items -%}
+          <li>
+            <time datetime="{{- post.date | date: "%Y-%m-%d" -}}">{{- post.date | date: "%b %d" | downcase -}}</time>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+<hr />
+
+<footer>
+  <p>
+    <a href="{{ "/" | relative_url }}">← back home</a>
+  </p>
+</footer> 

@@ -46,7 +46,8 @@ img {
 	margin: 0 auto;
 }
 
-p {
+p,
+span {
 	color: $mid;
 }
 
@@ -140,4 +141,8 @@ a {
 
 footer {
 	font-size: 0.875rem;
+}
+
+sup {
+	color: $mid;
 }

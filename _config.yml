@@ -27,3 +27,12 @@ plugins:
   - jekyll-seo-tag
 
 future: true
+
+# Enable custom plugins
+safe: false
+whitelist:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Add plugins directory to includes
+include: [_plugins]

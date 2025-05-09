@@ -1,0 +1,23 @@
+{% for tag in site.tags %}
+    {% if forloop.last %}
+        <span>
+            <a href="/tags/{{ tag[0] | slugify }}">
+                {{ tag[0] }}
+            </a>
+            <sup>
+                {{ tag[1].size }}
+            </sup>
+            .
+        </span>
+    {% else %}
+        <span>
+            <a href="/tags/{{ tag[0] | slugify }}">
+                {{ tag[0] }}
+            </a>
+            <sup>
+                {{ tag[1].size }}
+            </sup>
+            ,
+        </span>
+    {% endif %}
+{% endfor %}
