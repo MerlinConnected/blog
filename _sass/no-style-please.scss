@@ -1,23 +1,17 @@
 @import 'reset';
 @import 'fonts';
 
-//base scss color variables
-$black: #030302;
-$mid: #a49f93;
-$light: #fcf2d7;
-$dark: #302f2d;
-
 body {
-	background: $black;
-	color: $light;
+	background: var(--black);
+	color: var(--light);
 	font-family: 'p22-mackinac-pro', serif;
 	margin: 0;
 	min-height: 100%;
 }
 
-*:target {
-	background: blue;
-}
+// *:target {
+// 	background: $dark;
+// }
 
 .w {
 	max-width: 720px;
@@ -31,12 +25,11 @@ code {
 }
 
 blockquote {
-	font-style: italic;
-	border: thin solid black;
-	padding: 1rem;
-
+	padding-left: 2rem;
+	border-left: 2px solid var(--dark);
 	p {
 		margin: 0;
+		font-style: italic;
 	}
 }
 
@@ -48,7 +41,7 @@ img {
 
 p,
 span {
-	color: $mid;
+	color: var(--mid);
 }
 
 nav {
@@ -62,7 +55,7 @@ nav {
 		gap: 1rem;
 
 		p {
-			color: $light;
+			color: var(--light);
 		}
 	}
 
@@ -71,15 +64,21 @@ nav {
 	}
 
 	a {
-		color: $mid;
+		color: var(--mid);
 		&:hover {
-			color: $light;
+			color: var(--light);
 		}
 	}
 }
 
 header {
 	margin-top: 6rem;
+
+	> div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 h1,
@@ -100,12 +99,16 @@ h2 {
 }
 
 hr {
-	border: 1px solid $dark;
+	border: 1px solid var(--dark);
 	margin: 2.75rem 0;
 }
 
 a {
-	color: $light;
+	color: var(--light);
+}
+
+time {
+	color: var(--mid);
 }
 
 .articles {
@@ -125,17 +128,57 @@ a {
 			display: grid;
 			grid-template-columns: 3rem 1fr;
 			gap: 2rem;
+		}
+	}
+}
 
-			time {
-				color: $mid;
-			}
+article {
+	h3 {
+		font-size: 1.125rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+
+	h3,
+	h4 {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		list-style: disc;
+		list-style-position: inside;
+	}
+
+	ol {
+		list-style: lower-roman;
+		list-style-position: inside;
+	}
+
+	p {
+		margin-top: 1rem;
+	}
+
+	strong {
+		color: var(--light);
+	}
+
+	a {
+		color: var(--light);
+		text-decoration: underline;
+		text-underline-offset: 0.1rem;
+		text-decoration-skip-ink: auto;
+		&:hover {
+			color: var(--mid);
 		}
 	}
 }
 
 .social-links {
 	a {
-		color: $light;
+		color: var(--light);
 	}
 }
 
@@ -144,5 +187,5 @@ footer {
 }
 
 sup {
-	color: $mid;
+	color: var(--mid);
 }
