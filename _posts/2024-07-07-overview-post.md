@@ -54,12 +54,16 @@ Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus 
 
 Now some code:
 
-```
-const ultimateTruth = 'this theme is the best!';
-console.log(ultimateTruth);
+```js
+const ultimateTruth = 'this theme is the best!'
+console.log(ultimateTruth)
+var a = 1
+var b = 2
+var c = a + b
+console.log(c)
 ```
 
-And here is some `inline code`!
+And here is some `inline code`{:.inline-code}!
 
 ## [Tables](#tables)
 

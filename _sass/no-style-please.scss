@@ -20,8 +20,49 @@ body {
 }
 
 code {
-	color: white;
-	background: black;
+	font-family: 'monocraft', monospace;
+	color: var(--text-hc);
+	background: var(--border);
+	padding: 0.5rem;
+	display: inline-block;
+	width: 100%;
+
+	.kd {
+		color: #ffad66;
+		font-weight: bold;
+	}
+
+	.nx {
+		color: #f2dbc0;
+	}
+
+	.o {
+		color: #fca17d;
+	}
+
+	.p {
+		color: #c4b7a6;
+	}
+
+	.s1 {
+		color: #a0e8af;
+		font-style: italic;
+	}
+
+	.mi {
+		color: #85c1ff;
+	}
+
+	.dl {
+		color: #a0e8af;
+	}
+}
+
+.inline-code {
+	padding: 0.25rem;
+	width: fit-content;
+	line-height: 80%;
+	font-size: 0.875rem;
 }
 
 blockquote {
@@ -105,6 +146,10 @@ hr {
 
 a {
 	color: var(--text-hc);
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 time {

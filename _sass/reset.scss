@@ -66,6 +66,13 @@ blockquote {
 	margin: 0;
 }
 
+pre {
+	//reset
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
 :root {
 	--background: #f3f7fb;
 	--text-hc: #121d39;
