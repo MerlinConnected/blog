@@ -16,6 +16,7 @@ module Jekyll
 
   class TagPageGenerator < Generator
     safe true
+    priority :normal
 
     def generate(site)
       if site.layouts.key? 'tag'
