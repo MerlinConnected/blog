@@ -3,8 +3,8 @@ module Jekyll
     def initialize(site, base, tag)
       @site = site
       @base = base
-      @dir = 'tags'
-      @name = "#{tag}.html"
+      @dir = "tags/#{tag}"
+      @name = "index.html"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag.html')
